@@ -47,6 +47,7 @@
     <Compile Include="Entities\LoggingProviderBase.cs" />
     <Compile Include="GlobalSuppressions.cs" />
     <Compile Include="Interfaces\ILoggingProvider.cs" />
+    <Compile Include="Interfaces\ITimingProvider.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
