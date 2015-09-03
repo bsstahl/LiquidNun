@@ -16,6 +16,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LiquidNun.Logging.TestConte
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LiquidNun.Logging.TestContext", "LiquidNun.Logging.TestContext\LiquidNun.Logging.TestContext.csproj", "{A7C6B06E-6319-438D-8ED2-9A335FFD078E}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Timing Providers", "Timing Providers", "{13240069-4D2F-4D81-BD7C-AEDBED113AC0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LiquidNun.Timing.Threading", "LiquidNun.Timing.Threading\LiquidNun.Timing.Threading.csproj", "{E1A064A4-5D88-4574-BDC1-AC0F33FE16C2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -34,6 +38,10 @@ Global
 		{A7C6B06E-6319-438D-8ED2-9A335FFD078E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A7C6B06E-6319-438D-8ED2-9A335FFD078E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A7C6B06E-6319-438D-8ED2-9A335FFD078E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E1A064A4-5D88-4574-BDC1-AC0F33FE16C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E1A064A4-5D88-4574-BDC1-AC0F33FE16C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E1A064A4-5D88-4574-BDC1-AC0F33FE16C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E1A064A4-5D88-4574-BDC1-AC0F33FE16C2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -41,5 +49,6 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{8509463E-F493-43B6-80DE-CA7C3F273E45} = {D0CAB989-8866-4A5F-AE47-442B7D44F2C3}
 		{A7C6B06E-6319-438D-8ED2-9A335FFD078E} = {D0CAB989-8866-4A5F-AE47-442B7D44F2C3}
+		{E1A064A4-5D88-4574-BDC1-AC0F33FE16C2} = {13240069-4D2F-4D81-BD7C-AEDBED113AC0}
 	EndGlobalSection
 EndGlobal
