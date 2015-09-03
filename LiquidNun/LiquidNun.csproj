@@ -44,6 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Entities\EventLogEntryType.cs" />
+    <Compile Include="Entities\LoggingProviderBase.cs" />
     <Compile Include="GlobalSuppressions.cs" />
     <Compile Include="Interfaces\ILoggingProvider.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
