@@ -4,8 +4,10 @@ using LiquidNun.Entities;
 namespace LiquidNun.Logging.TestContext
 {
     /// <summary>
-    /// Logs the specified events to the Test Context
+    /// Logs the specified events to the Test Context. Used to display the
+    /// results of logging in tests run under MSTest.
     /// </summary>
+    /// <remarks>Requires the .NET Framework version 4.6 or higher.</remarks>
     public class Provider : LoggingProviderBase
     {
         internal Microsoft.VisualStudio.TestTools.UnitTesting.TestContext _testContext { get; set; }
