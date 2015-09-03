@@ -31,7 +31,7 @@ namespace LiquidNun.Logging.TestContext
         /// <param name="entryType">The type of entry as described in the EventLogEntryType enumeration.</param>
         public override void Write(string category, string title, string message, int severity, EventLogEntryType entryType)
         {
-            throw new NotImplementedException();
+            _testContext.WriteLine("Logger: {0} ({1}/{3}) - {2}\r\n", title, category, message, severity);
         }
     }
 }
