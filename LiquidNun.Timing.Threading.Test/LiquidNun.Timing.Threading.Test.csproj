@@ -63,7 +63,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\LiquidNun.Timing.Threading\LiquidNun.Timing.Threading.csproj">
-      <Project>{e1a064a4-5d88-4574-bdc1-ac0f33fe16c2}</Project>
+      <Project>{400500d5-a7f5-46b6-b29b-8aadc5e0c2d4}</Project>
       <Name>LiquidNun.Timing.Threading</Name>
     </ProjectReference>
     <ProjectReference Include="..\LiquidNun\LiquidNun.csproj">

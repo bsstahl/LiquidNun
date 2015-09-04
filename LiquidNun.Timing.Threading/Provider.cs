@@ -36,7 +36,7 @@ namespace LiquidNun.Timing.Threading
         /// <param name="length">The length of time after which the method should return.</param>
         public void Delay(TimeSpan length)
         {
-            throw new NotImplementedException();
+            System.Threading.Thread.Sleep(length);
         }
     }
 }
