@@ -1,0 +1,296 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>LiquidNun</name>
+    </assembly>
+    <members>
+        <member name="T:LiquidNun.Entities.EventLogEntryType">
+            <summary>
+            Enumerates the types of Event Log Entries
+            available to the logging system.
+            </summary>
+        </member>
+        <member name="F:LiquidNun.Entities.EventLogEntryType.Information">
+            <summary>
+            Identifies a log entry as informational only.
+            </summary>
+        </member>
+        <member name="F:LiquidNun.Entities.EventLogEntryType.Warning">
+            <summary>
+            Identifies a log entry as resulting from a warning event.
+            </summary>
+        </member>
+        <member name="F:LiquidNun.Entities.EventLogEntryType.Error">
+            <summary>
+            Identifies a log entry as resulting from an application error event.
+            </summary>
+        </member>
+        <member name="F:LiquidNun.Entities.EventLogEntryType.Crash">
+            <summary>
+            Identifies a log entry as resulting from an application crash event.
+            </summary>
+        </member>
+        <member name="T:LiquidNun.Entities.LoggingProviderBase">
+            <summary>
+            An abstract base class used to help implement logging providers.
+            </summary>
+        </member>
+        <member name="M:LiquidNun.Entities.LoggingProviderBase.Write(System.String,System.String,System.String,System.Int32,LiquidNun.Entities.EventLogEntryType)">
+            <summary>
+            A method that needs to be exposed by the provider to write the log entry to the underlying data store.
+            </summary>
+            <param name="category">The application specific category of the log entry.</param>
+            <param name="title">The title for the log entry. This is usually the 1st thing that 
+            will be seen when entries are reviewed.</param>
+            <param name="message">The full text of the message sent to the logging provider.</param>
+            <param name="severity">An indication of how critical an event the entry represents.</param>
+            <param name="entryType">The type of entry as described in the EventLogEntryType enumeration.</param>
+        </member>
+        <member name="M:LiquidNun.Entities.LoggingProviderBase.LogCrash(System.String,System.String,System.String,System.Object[])">
+            <summary>
+            Calls the write method with the appropriate parameters to create a log entry representing a crash event.
+            </summary>
+            <param name="category">The application specific category of the log entry.</param>
+            <param name="title">The title for the log entry. This is usually the 1st thing that 
+            will be seen when entries are reviewed.</param>
+            <param name="messageFormat">The formatting template for the text of the message.</param>
+            <param name="messageParameters">The parameters to be applied to the messageFormat template.</param>
+        </member>
+        <member name="M:LiquidNun.Entities.LoggingProviderBase.LogCrash(System.String,System.String,System.String)">
+            <summary>
+            Calls the write method with the appropriate parameters to create a log entry representing a crash event.
+            </summary>
+            <param name="category">The application specific category of the log entry.</param>
+            <param name="title">The title for the log entry. This is usually the 1st thing that 
+            will be seen when entries are reviewed.</param>
+            <param name="message">The full text of the message sent to the logging provider.</param>
+        </member>
+        <member name="M:LiquidNun.Entities.LoggingProviderBase.LogError(System.String,System.String,System.String,System.Object[])">
+            <summary>
+            Calls the write method with the appropriate parameters to create a log entry representing a error event.
+            </summary>
+            <param name="category">The application specific category of the log entry.</param>
+            <param name="title">The title for the log entry. This is usually the 1st thing that 
+            will be seen when entries are reviewed.</param>
+            <param name="messageFormat">The formatting template for the text of the message.</param>
+            <param name="messageParameters">The parameters to be applied to the messageFormat template.</param>
+        </member>
+        <member name="M:LiquidNun.Entities.LoggingProviderBase.LogError(System.String,System.String,System.String)">
+            <summary>
+            Calls the write method with the appropriate parameters to create a log entry representing a error event.
+            </summary>
+            <param name="category">The application specific category of the log entry.</param>
+            <param name="title">The title for the log entry. This is usually the 1st thing that 
+            will be seen when entries are reviewed.</param>
+            <param name="message">The full text of the message sent to the logging provider.</param>
+        </member>
+        <member name="M:LiquidNun.Entities.LoggingProviderBase.LogInformation(System.String,System.String,System.String,System.Object[])">
+            <summary>
+            Calls the write method with the appropriate parameters to create a log entry representing a informational event.
+            </summary>
+            <param name="category">The application specific category of the log entry.</param>
+            <param name="title">The title for the log entry. This is usually the 1st thing that 
+            will be seen when entries are reviewed.</param>
+            <param name="messageFormat">The formatting template for the text of the message.</param>
+            <param name="messageParameters">The parameters to be applied to the messageFormat template.</param>
+        </member>
+        <member name="M:LiquidNun.Entities.LoggingProviderBase.LogInformation(System.String,System.String,System.String)">
+            <summary>
+            Calls the write method with the appropriate parameters to create a log entry representing a informational event.
+            </summary>
+            <param name="category">The application specific category of the log entry.</param>
+            <param name="title">The title for the log entry. This is usually the 1st thing that 
+            will be seen when entries are reviewed.</param>
+            <param name="message">The full text of the message sent to the logging provider.</param>
+        </member>
+        <member name="M:LiquidNun.Entities.LoggingProviderBase.LogWarning(System.String,System.String,System.String,System.Object[])">
+            <summary>
+            Calls the write method with the appropriate parameters to create a log entry representing a warning event.
+            </summary>
+            <param name="category">The application specific category of the log entry.</param>
+            <param name="title">The title for the log entry. This is usually the 1st thing that 
+            will be seen when entries are reviewed.</param>
+            <param name="messageFormat">The formatting template for the text of the message.</param>
+            <param name="messageParameters">The parameters to be applied to the messageFormat template.</param>
+        </member>
+        <member name="M:LiquidNun.Entities.LoggingProviderBase.LogWarning(System.String,System.String,System.String)">
+            <summary>
+            Calls the write method with the appropriate parameters to create a log entry representing a warning event.
+            </summary>
+            <param name="category">The application specific category of the log entry.</param>
+            <param name="title">The title for the log entry. This is usually the 1st thing that 
+            will be seen when entries are reviewed.</param>
+            <param name="message">The full text of the message sent to the logging provider.</param>
+        </member>
+        <member name="T:LiquidNun.Exceptions.DirectoryNotFoundException">
+            <summary>
+            Represents an error that indicates that the specified folder
+            could not be found within the directory system.
+            </summary>
+        </member>
+        <member name="P:LiquidNun.Exceptions.DirectoryNotFoundException.PathName">
+            <summary>
+            The path that was specified for the directory
+            </summary>
+        </member>
+        <member name="M:LiquidNun.Exceptions.DirectoryNotFoundException.#ctor">
+            <summary>
+            The default constructor of the exception
+            </summary>
+        </member>
+        <member name="M:LiquidNun.Exceptions.DirectoryNotFoundException.#ctor(System.String)">
+            <summary>
+            The primary (preferred) constructor of the exception
+            </summary>
+            <param name="pathName">The path that was specified for the directory</param>
+        </member>
+        <member name="M:LiquidNun.Exceptions.DirectoryNotFoundException.#ctor(System.String,System.Exception)">
+            <summary>
+            A standard implementation for an exception constructor
+            </summary>
+            <param name="message">The description of the error</param>
+            <param name="innerException">The error that caused this error</param>
+        </member>
+        <member name="T:LiquidNun.Exceptions.FileNotFoundException">
+            <summary>
+            Represents an error that indicates that the specified file
+            could not be found within the directory system.
+            </summary>
+        </member>
+        <member name="P:LiquidNun.Exceptions.FileNotFoundException.FilePath">
+            <summary>
+            The path that was specified for the file
+            </summary>
+        </member>
+        <member name="M:LiquidNun.Exceptions.FileNotFoundException.#ctor">
+            <summary>
+            The default constructor of the exception
+            </summary>
+        </member>
+        <member name="M:LiquidNun.Exceptions.FileNotFoundException.#ctor(System.String)">
+            <summary>
+            The primary (preferred) constructor of the exception
+            </summary>
+            <param name="filePath">The path that was specified for the directory</param>
+        </member>
+        <member name="M:LiquidNun.Exceptions.FileNotFoundException.#ctor(System.String,System.Exception)">
+            <summary>
+            A standard implementation for an exception constructor
+            </summary>
+            <param name="message">The description of the error</param>
+            <param name="innerException">The error that caused this error</param>
+        </member>
+        <member name="T:LiquidNun.Interfaces.IDirectoryService">
+            <summary>
+            Describes an interface of a provider that implements directory 
+            services for files and other file system type objects.
+            </summary>
+        </member>
+        <member name="M:LiquidNun.Interfaces.IDirectoryService.GetFiles(System.String)">
+            <summary>
+            Returns the names of files in the specified directory.
+            </summary>
+            <param name="pathName">Path name.</param>
+        </member>
+        <member name="M:LiquidNun.Interfaces.IDirectoryService.ReadAllText(System.String)">
+            <summary>
+            Returns all of the text of the file at the specified path
+            </summary>
+            <param name="filePath">Path name.</param>
+        </member>
+        <member name="T:LiquidNun.Interfaces.ILoggingProvider">
+            <summary>
+            Describes the interface of a service that accepts log entry information,
+            formats the information as needed for the particular implementation, and provides 
+            that data to the appropriate store.
+            </summary>
+        </member>
+        <member name="M:LiquidNun.Interfaces.ILoggingProvider.Write(System.String,System.String,System.String,System.Int32,LiquidNun.Entities.EventLogEntryType)">
+            <summary>
+            Writes the log entry to the underlying data store
+            </summary>
+            <param name="category">The application specific category of the log entry.</param>
+            <param name="title">The title for the log entry. This is usually the 1st thing that 
+            will be seen when entries are reviewed.</param>
+            <param name="message">The full text of the message sent to the logging provider.</param>
+            <param name="severity">An indication of how critical an event the entry represents.</param>
+            <param name="entryType">The type of entry as described in the EventLogEntryType enumeration.</param>
+        </member>
+        <member name="M:LiquidNun.Interfaces.ILoggingProvider.LogInformation(System.String,System.String,System.String)">
+            <summary>
+            Writes a log entry for an informational event
+            </summary>
+            <param name="category">The application specific category of the log entry.</param>
+            <param name="title">The title for the log entry. This is usually the 1st thing that 
+            will be seen when entries are reviewed.</param>
+            <param name="message">The full text of the message sent to the logging provider.</param>
+        </member>
+        <member name="M:LiquidNun.Interfaces.ILoggingProvider.LogWarning(System.String,System.String,System.String)">
+            <summary>
+            Writes a log entry for a warning event
+            </summary>
+            <param name="category">The application specific category of the log entry.</param>
+            <param name="title">The title for the log entry. This is usually the 1st thing that 
+            will be seen when entries are reviewed.</param>
+            <param name="message">The full text of the message sent to the logging provider.</param>
+        </member>
+        <member name="M:LiquidNun.Interfaces.ILoggingProvider.LogError(System.String,System.String,System.String)">
+            <summary>
+            Writes a log entry for an error event
+            </summary>
+            <param name="category">The application specific category of the log entry.</param>
+            <param name="title">The title for the log entry. This is usually the 1st thing that 
+            will be seen when entries are reviewed.</param>
+            <param name="message">The full text of the message sent to the logging provider.</param>
+        </member>
+        <member name="M:LiquidNun.Interfaces.ILoggingProvider.LogCrash(System.String,System.String,System.String)">
+            <summary>
+            Writes a log entry for a crash event
+            </summary>
+            <param name="category">The application specific category of the log entry.</param>
+            <param name="title">The title for the log entry. This is usually the 1st thing that 
+            will be seen when entries are reviewed.</param>
+            <param name="message">The full text of the message sent to the logging provider.</param>
+        </member>
+        <member name="M:LiquidNun.Interfaces.ILoggingProvider.LogInformation(System.String,System.String,System.String,System.Object[])">
+            <summary>
+            Writes a log entry for an informational event
+            </summary>
+            <param name="category">The application specific category of the log entry.</param>
+            <param name="title">The title for the log entry. This is usually the 1st thing that 
+            will be seen when entries are reviewed.</param>
+            <param name="messageFormat">The formatting template for the text of the message.</param>
+            <param name="messageParameters">The parameters to be applied to the messageFormat template.</param>
+        </member>
+        <member name="M:LiquidNun.Interfaces.ILoggingProvider.LogWarning(System.String,System.String,System.String,System.Object[])">
+            <summary>
+            Writes a log entry for a warning event
+            </summary>
+            <param name="category">The application specific category of the log entry.</param>
+            <param name="title">The title for the log entry. This is usually the 1st thing that 
+            will be seen when entries are reviewed.</param>
+            <param name="messageFormat">The formatting template for the text of the message.</param>
+            <param name="messageParameters">The parameters to be applied to the messageFormat template.</param>
+        </member>
+        <member name="M:LiquidNun.Interfaces.ILoggingProvider.LogError(System.String,System.String,System.String,System.Object[])">
+            <summary>
+            Writes a log entry for an error event
+            </summary>
+            <param name="category">The application specific category of the log entry.</param>
+            <param name="title">The title for the log entry. This is usually the 1st thing that 
+            will be seen when entries are reviewed.</param>
+            <param name="messageFormat">The formatting template for the text of the message.</param>
+            <param name="messageParameters">The parameters to be applied to the messageFormat template.</param>
+        </member>
+        <member name="M:LiquidNun.Interfaces.ILoggingProvider.LogCrash(System.String,System.String,System.String,System.Object[])">
+            <summary>
+            Writes a log entry for a crash event
+            </summary>
+            <param name="category">The application specific category of the log entry.</param>
+            <param name="title">The title for the log entry. This is usually the 1st thing that 
+            will be seen when entries are reviewed.</param>
+            <param name="messageFormat">The formatting template for the text of the message.</param>
+            <param name="messageParameters">The parameters to be applied to the messageFormat template.</param>
+        </member>
+    </members>
+</doc>

@@ -62,10 +62,6 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\LiquidNun.Timing.Threading\LiquidNun.Timing.Threading.csproj">
-      <Project>{400500d5-a7f5-46b6-b29b-8aadc5e0c2d4}</Project>
-      <Name>LiquidNun.Timing.Threading</Name>
-    </ProjectReference>
     <ProjectReference Include="..\LiquidNun\LiquidNun.csproj">
       <Project>{30701c7d-f735-42ac-bbfa-a021947a7640}</Project>
       <Name>LiquidNun</Name>

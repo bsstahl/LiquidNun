@@ -1,0 +1,22 @@
+{
+  "version": 2,
+  "exports": {
+    "LiquidNun/1.0.0": {
+      "type": "project",
+      "framework": ".NETStandard,Version=v1.0",
+      "compile": {
+        "bin/Debug/LiquidNun.dll": {}
+      },
+      "runtime": {
+        "bin/Debug/LiquidNun.dll": {}
+      },
+      "contentFiles": {
+        "bin/Debug/LiquidNun.pdb": {
+          "buildAction": "None",
+          "codeLanguage": "any",
+          "copyToOutput": true
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,1 @@
+C:\Users\bstahl\Source\Repos\LiquidNun\LiquidNun.Timing.Threading.Test\obj\Debug\LiquidNun.Timing.Threading.Test.csprojResolveAssemblyReference.cache
