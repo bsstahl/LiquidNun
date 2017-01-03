@@ -45,11 +45,14 @@
   <ItemGroup>
     <Compile Include="Entities\EventLogEntryType.cs" />
     <Compile Include="Entities\LoggingProviderBase.cs" />
+    <Compile Include="Enumerations\Priority.cs" />
     <Compile Include="Exceptions\DirectoryNotFoundException.cs" />
     <Compile Include="Exceptions\FileNotFoundException.cs" />
     <Compile Include="GlobalSuppressions.cs" />
     <Compile Include="Interfaces\IDirectoryService.cs" />
     <Compile Include="Interfaces\ILoggingProvider.cs" />
+    <Compile Include="Interfaces\IReliableMessaging.cs" />
+    <Compile Include="Interfaces\IReliableMessagingTransaction.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

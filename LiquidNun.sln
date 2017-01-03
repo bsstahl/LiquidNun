@@ -21,6 +21,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LiquidNun.Logging.TestConte
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LiquidNun.Logging.TestContext.Test", "LiquidNun.Logging.TestContext.Test\LiquidNun.Logging.TestContext.Test.csproj", "{8509463E-F493-43B6-80DE-CA7C3F273E45}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ReliableMessaging Providers", "ReliableMessaging Providers", "{6DA092D2-9000-47EE-833E-B4010B059D4F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
