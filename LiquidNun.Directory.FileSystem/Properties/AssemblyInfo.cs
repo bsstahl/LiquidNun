@@ -6,7 +6,7 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("US Airways")]
+[assembly: AssemblyCompany("Barry S. Stahl")]
 [assembly: AssemblyProduct("LiquidNun.Directory.FileSystem")]
 [assembly: AssemblyTrademark("")]
 
