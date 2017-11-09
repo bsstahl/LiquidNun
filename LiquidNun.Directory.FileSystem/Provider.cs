@@ -17,7 +17,7 @@ namespace LiquidNun.Directory.FileSystem
             return System.IO.File.ReadAllText(filePath);
         }
 
-        IEnumerable<string> IDirectoryService.GetFiles(string pathName)
+        public IEnumerable<string> GetFiles(string pathName)
         {
             try
             {
@@ -29,14 +29,14 @@ namespace LiquidNun.Directory.FileSystem
             }
         }
 
-        bool Exists(string pathName)
-        {
-            return System.IO.Directory.Exists(pathName);
-        }
-
-        bool FileExists(string filePath)
+        public bool FileExists(string filePath)
         {
             return System.IO.File.Exists(filePath);
+        }
+
+        public bool Exists(string pathName)
+        {
+            return System.IO.Directory.Exists(pathName);
         }
 
         #endregion
