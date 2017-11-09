@@ -37,5 +37,6 @@ namespace LiquidNun.Interfaces
         //System.IO.Stream GetFileData(string filePath);
 
         bool Exists(string pathName);
+        IFileReader OpenFileForRead(string filePath);
     }
 }

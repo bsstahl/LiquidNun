@@ -6,7 +6,12 @@
     <Description>A library of abstractions that assist in the creation of loosely-coupled applications using .NET Core.</Description>
     <Summary>A library of abstractions that assist in the creation of loosely-coupled applications using .NET Core.</Summary>
     <Copyright>Copyright © 2015 by CopperByte, Inc.</Copyright>
-    <Version>0.6.2</Version>
+    <Version>0.6.5</Version>
+    <RunPostBuildEvent>OnOutputUpdated</RunPostBuildEvent>
   </PropertyGroup>
+
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+    <Exec Command="copy $(OutDir)..\LiquidNun.*.nupkg $(ProjectDir)..\Package-Source\" />
+  </Target>
 
 </Project>

@@ -39,6 +39,11 @@ namespace LiquidNun.Directory.FileSystem
             return System.IO.Directory.Exists(pathName);
         }
 
+        public IFileReader OpenFileForRead(string filePath)
+        {
+            return new FileReader(filePath);
+        }
+
         #endregion
     }
 
