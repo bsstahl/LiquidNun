@@ -5,11 +5,11 @@
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <Description>An abstracted implementation of the File System that assists in the creation of loosely-coupled applications using .NET Core.</Description>
     <Summary>An abstracted implementation of the File System that assists in the creation of loosely-coupled applications using .NET Core.</Summary>
-    <Version>0.6.1</Version>
+    <Version>0.6.2</Version>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="LiquidNun" Version="0.6.0" />
+    <PackageReference Include="LiquidNun" Version="0.6.2" />
   </ItemGroup>
 
 </Project>

@@ -29,6 +29,16 @@ namespace LiquidNun.Directory.FileSystem
             }
         }
 
+        bool Exists(string pathName)
+        {
+            return System.IO.Directory.Exists(pathName);
+        }
+
+        bool FileExists(string filePath)
+        {
+            return System.IO.File.Exists(filePath);
+        }
+
         #endregion
     }
 

@@ -32,9 +32,10 @@ namespace LiquidNun.Interfaces
 
         //string[] ReadAllLines(string filePath);
         //void DeleteFile(string filePath);
-        //bool FileExists(string filePath);
+        bool FileExists(string filePath);
         //byte[] ReadAllBytes(string filePath);
         //System.IO.Stream GetFileData(string filePath);
 
+        bool Exists(string pathName);
     }
 }
