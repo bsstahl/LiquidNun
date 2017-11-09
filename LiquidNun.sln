@@ -10,15 +10,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		CustomDictionary.xml = CustomDictionary.xml
 	EndProjectSection
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Logging Providers", "Logging Providers", "{D0CAB989-8866-4A5F-AE47-442B7D44F2C3}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Directory Providers", "Directory Providers", "{8255AC0B-4360-4FE1-A3F2-47F0465BADA3}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ReliableMessaging Providers", "ReliableMessaging Providers", "{6DA092D2-9000-47EE-833E-B4010B059D4F}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LiquidNun", "LiquidNun\LiquidNun.csproj", "{DF23406C-008C-4DA6-8328-4F92AB7358D7}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LiquidNun.Directory.FileSystem", "LiquidNun.Directory.FileSystem\LiquidNun.Directory.FileSystem.csproj", "{005ACB66-3A50-4267-A387-6391C5233C53}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -30,16 +22,9 @@ Global
 		{DF23406C-008C-4DA6-8328-4F92AB7358D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DF23406C-008C-4DA6-8328-4F92AB7358D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DF23406C-008C-4DA6-8328-4F92AB7358D7}.Release|Any CPU.Build.0 = Release|Any CPU
-		{005ACB66-3A50-4267-A387-6391C5233C53}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{005ACB66-3A50-4267-A387-6391C5233C53}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{005ACB66-3A50-4267-A387-6391C5233C53}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{005ACB66-3A50-4267-A387-6391C5233C53}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(NestedProjects) = preSolution
-		{005ACB66-3A50-4267-A387-6391C5233C53} = {8255AC0B-4360-4FE1-A3F2-47F0465BADA3}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C4EE3DB5-F711-4990-BFAB-5CAD8053D0DE}

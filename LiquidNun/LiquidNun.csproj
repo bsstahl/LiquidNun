@@ -1,7 +1,12 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
+    <TargetFramework>netstandard1.0</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Description>A library of abstractions that assist in the creation of loosely-coupled applications using .NET Core.</Description>
+    <Summary>A library of abstractions that assist in the creation of loosely-coupled applications using .NET Core.</Summary>
+    <Copyright>Copyright © 2015 by CopperByte, Inc.</Copyright>
+    <Version>0.6.0</Version>
   </PropertyGroup>
 
 </Project>
