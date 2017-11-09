@@ -1,7 +1,0 @@
-C:\Users\bstahl\Source\Repos\LiquidNun\LiquidNun\bin\Debug\LiquidNun.XML
-C:\Users\bstahl\Source\Repos\LiquidNun\LiquidNun\bin\Debug\LiquidNun.dll
-C:\Users\bstahl\Source\Repos\LiquidNun\LiquidNun\bin\Debug\LiquidNun.pdb
-C:\Users\bstahl\Source\Repos\LiquidNun\LiquidNun\bin\Debug\LiquidNun.dll.CodeAnalysisLog.xml
-C:\Users\bstahl\Source\Repos\LiquidNun\LiquidNun\bin\Debug\LiquidNun.dll.lastcodeanalysissucceeded
-C:\Users\bstahl\Source\Repos\LiquidNun\LiquidNun\obj\Debug\LiquidNun.dll
-C:\Users\bstahl\Source\Repos\LiquidNun\LiquidNun\obj\Debug\LiquidNun.pdb

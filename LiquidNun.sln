@@ -1,12 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2005
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LiquidNun", "LiquidNun\LiquidNun.csproj", "{30701C7D-F735-42AC-BBFA-A021947A7640}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{D8CC46EE-2E81-4F83-AF75-4D4EBF20F734}"
 	ProjectSection(SolutionItems) = preProject
+		.gitattributes = .gitattributes
 		.gitignore = .gitignore
 		CustomDictionary.xml = CustomDictionary.xml
 	EndProjectSection
@@ -15,13 +14,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Logging Providers", "Loggin
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Directory Providers", "Directory Providers", "{8255AC0B-4360-4FE1-A3F2-47F0465BADA3}"
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "LiquidNun.Directory.FileSystem", "LiquidNun.Directory.FileSystem\LiquidNun.Directory.FileSystem.xproj", "{A368423B-89E9-4941-ADBA-4664C9A97F61}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LiquidNun.Logging.TestContext", "LiquidNun.Logging.TestContext\LiquidNun.Logging.TestContext.csproj", "{A7C6B06E-6319-438D-8ED2-9A335FFD078E}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LiquidNun.Logging.TestContext.Test", "LiquidNun.Logging.TestContext.Test\LiquidNun.Logging.TestContext.Test.csproj", "{8509463E-F493-43B6-80DE-CA7C3F273E45}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ReliableMessaging Providers", "ReliableMessaging Providers", "{6DA092D2-9000-47EE-833E-B4010B059D4F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LiquidNun", "LiquidNun\LiquidNun.csproj", "{DF23406C-008C-4DA6-8328-4F92AB7358D7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LiquidNun.Directory.FileSystem", "LiquidNun.Directory.FileSystem\LiquidNun.Directory.FileSystem.csproj", "{005ACB66-3A50-4267-A387-6391C5233C53}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,29 +26,22 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{30701C7D-F735-42AC-BBFA-A021947A7640}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{30701C7D-F735-42AC-BBFA-A021947A7640}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{30701C7D-F735-42AC-BBFA-A021947A7640}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{30701C7D-F735-42AC-BBFA-A021947A7640}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A368423B-89E9-4941-ADBA-4664C9A97F61}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A368423B-89E9-4941-ADBA-4664C9A97F61}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A368423B-89E9-4941-ADBA-4664C9A97F61}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A368423B-89E9-4941-ADBA-4664C9A97F61}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A7C6B06E-6319-438D-8ED2-9A335FFD078E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A7C6B06E-6319-438D-8ED2-9A335FFD078E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A7C6B06E-6319-438D-8ED2-9A335FFD078E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A7C6B06E-6319-438D-8ED2-9A335FFD078E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{8509463E-F493-43B6-80DE-CA7C3F273E45}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8509463E-F493-43B6-80DE-CA7C3F273E45}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8509463E-F493-43B6-80DE-CA7C3F273E45}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8509463E-F493-43B6-80DE-CA7C3F273E45}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF23406C-008C-4DA6-8328-4F92AB7358D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF23406C-008C-4DA6-8328-4F92AB7358D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF23406C-008C-4DA6-8328-4F92AB7358D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF23406C-008C-4DA6-8328-4F92AB7358D7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{005ACB66-3A50-4267-A387-6391C5233C53}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{005ACB66-3A50-4267-A387-6391C5233C53}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{005ACB66-3A50-4267-A387-6391C5233C53}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{005ACB66-3A50-4267-A387-6391C5233C53}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{A368423B-89E9-4941-ADBA-4664C9A97F61} = {8255AC0B-4360-4FE1-A3F2-47F0465BADA3}
-		{A7C6B06E-6319-438D-8ED2-9A335FFD078E} = {D0CAB989-8866-4A5F-AE47-442B7D44F2C3}
-		{8509463E-F493-43B6-80DE-CA7C3F273E45} = {D0CAB989-8866-4A5F-AE47-442B7D44F2C3}
+		{005ACB66-3A50-4267-A387-6391C5233C53} = {8255AC0B-4360-4FE1-A3F2-47F0465BADA3}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C4EE3DB5-F711-4990-BFAB-5CAD8053D0DE}
 	EndGlobalSection
 EndGlobal
