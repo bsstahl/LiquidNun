@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace LiquidNun.Timing.Threading
+namespace LiquidNun.Timing.Threads
 {
     /// <summary>
     /// Implements a delay service using the System.Threading API
@@ -36,7 +36,21 @@ namespace LiquidNun.Timing.Threading
         /// <param name="length">The length of time after which the method should return.</param>
         public void Delay(TimeSpan length)
         {
-            System.Threading.Thread.Sleep(length);
+            const int slackTicks = 0;
+
+            long startingTicks = DateTime.Now.Ticks;
+            long delayTicks = length.Ticks;
+            long whenToStopInTicks = startingTicks + delayTicks - slackTicks;
+
+            do
+            {
+                //if ((whenToStopInTicks - DateTime.Now.Ticks) > slackTicks)
+                //{
+                //    delayTicks = whenToStopInTicks - DateTime.Now.Ticks - slackTicks;
+                //    var t = System.Threading.Tasks.Task.Delay(length);
+                //    t.Wait();
+                //}
+            } while (DateTime.Now.Ticks < whenToStopInTicks);
         }
     }
 }

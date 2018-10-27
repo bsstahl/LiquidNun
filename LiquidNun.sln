@@ -1,16 +1,29 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.27004.2005
+VisualStudioVersion = 15.0.28010.2041
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{D8CC46EE-2E81-4F83-AF75-4D4EBF20F734}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LiquidNun", "src\LiquidNun\LiquidNun.csproj", "{B18890AC-FCA7-4729-9144-E3108075D154}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{A09ED186-E52D-43DD-B6C0-62BD3870B9D3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tst", "tst", "{5B90FF6D-DA31-4B01-935A-1BCC12132C77}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LiquidNun.Timing.Threads", "src\LiquidNun.Timing.Threads\LiquidNun.Timing.Threads.csproj", "{D5EDCEF2-1DE0-4018-8A17-7CA8BA4B990B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LiquidNun.Timing.Threads.Test", "tst\LiquidNun.Timing.Threads.Test\LiquidNun.Timing.Threads.Test.csproj", "{D9F3A07A-949E-4B08-8596-44204FACCA7A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LiquidNun.Logging.Stdout", "src\LiquidNun.Logging.Stdout\LiquidNun.Logging.Stdout.csproj", "{877FF87C-663D-47C4-A69B-F812F11DD3FD}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LiquidNun.Directory.FileSystem", "src\LiquidNun.Directory.FileSystem\LiquidNun.Directory.FileSystem.csproj", "{67E79DD2-04F6-4364-924D-DCD98B0F5E17}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{920FB55F-377A-4DD8-A77E-83621889B16F}"
 	ProjectSection(SolutionItems) = preProject
-		.gitattributes = .gitattributes
 		.gitignore = .gitignore
 		CustomDictionary.xml = CustomDictionary.xml
+		LICENSE = LICENSE
+		README.md = README.md
 	EndProjectSection
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LiquidNun", "LiquidNun\LiquidNun.csproj", "{DF23406C-008C-4DA6-8328-4F92AB7358D7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -18,15 +31,38 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{DF23406C-008C-4DA6-8328-4F92AB7358D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{DF23406C-008C-4DA6-8328-4F92AB7358D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{DF23406C-008C-4DA6-8328-4F92AB7358D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{DF23406C-008C-4DA6-8328-4F92AB7358D7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B18890AC-FCA7-4729-9144-E3108075D154}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B18890AC-FCA7-4729-9144-E3108075D154}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B18890AC-FCA7-4729-9144-E3108075D154}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B18890AC-FCA7-4729-9144-E3108075D154}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D5EDCEF2-1DE0-4018-8A17-7CA8BA4B990B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D5EDCEF2-1DE0-4018-8A17-7CA8BA4B990B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D5EDCEF2-1DE0-4018-8A17-7CA8BA4B990B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D5EDCEF2-1DE0-4018-8A17-7CA8BA4B990B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D9F3A07A-949E-4B08-8596-44204FACCA7A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D9F3A07A-949E-4B08-8596-44204FACCA7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D9F3A07A-949E-4B08-8596-44204FACCA7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D9F3A07A-949E-4B08-8596-44204FACCA7A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{877FF87C-663D-47C4-A69B-F812F11DD3FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{877FF87C-663D-47C4-A69B-F812F11DD3FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{877FF87C-663D-47C4-A69B-F812F11DD3FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{877FF87C-663D-47C4-A69B-F812F11DD3FD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{67E79DD2-04F6-4364-924D-DCD98B0F5E17}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{67E79DD2-04F6-4364-924D-DCD98B0F5E17}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{67E79DD2-04F6-4364-924D-DCD98B0F5E17}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{67E79DD2-04F6-4364-924D-DCD98B0F5E17}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B18890AC-FCA7-4729-9144-E3108075D154} = {A09ED186-E52D-43DD-B6C0-62BD3870B9D3}
+		{D5EDCEF2-1DE0-4018-8A17-7CA8BA4B990B} = {A09ED186-E52D-43DD-B6C0-62BD3870B9D3}
+		{D9F3A07A-949E-4B08-8596-44204FACCA7A} = {5B90FF6D-DA31-4B01-935A-1BCC12132C77}
+		{877FF87C-663D-47C4-A69B-F812F11DD3FD} = {A09ED186-E52D-43DD-B6C0-62BD3870B9D3}
+		{67E79DD2-04F6-4364-924D-DCD98B0F5E17} = {A09ED186-E52D-43DD-B6C0-62BD3870B9D3}
+	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {C4EE3DB5-F711-4990-BFAB-5CAD8053D0DE}
+		SolutionGuid = {149EC20A-C436-4604-B05D-8968169E83FB}
 	EndGlobalSection
 EndGlobal

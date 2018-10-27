@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 
 namespace LiquidNun.Interfaces
 {
@@ -37,6 +36,7 @@ namespace LiquidNun.Interfaces
         //System.IO.Stream GetFileData(string filePath);
 
         bool Exists(string pathName);
+
         IFileReader OpenFileForRead(string filePath);
     }
 }

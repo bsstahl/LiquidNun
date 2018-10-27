@@ -10,7 +10,7 @@ namespace LiquidNun.Exceptions
     /// Represents an error that indicates that the specified file
     /// could not be found within the directory system.
     /// </summary>
-    public class FileNotFoundException: Exception
+    public class FileNotFoundException : Exception
     {
         /// <summary>
         /// The path that was specified for the file
