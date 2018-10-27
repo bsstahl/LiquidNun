@@ -2,6 +2,11 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <PackageLicenseUrl>https://github.com/bsstahl/LiquidNun/blob/master/LICENSE</PackageLicenseUrl>
+    <Copyright>Copyright (C) 2007 Free Software Foundation, Inc. &lt;https://fsf.org/&gt;</Copyright>
+    <Version>0.7.0</Version>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
   </PropertyGroup>
 
   <ItemGroup>
