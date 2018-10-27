@@ -2,11 +2,19 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <Copyright>Copyright (C) 2007 Free Software Foundation, Inc. &lt;https://fsf.org/&gt;</Copyright>
+    <Version>0.7.0</Version>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
-    <Version>0.7.0</Version>
-    <Copyright>Copyright (C) 2007 Free Software Foundation, Inc. &lt;https://fsf.org/&gt;</Copyright>
     <PackageLicenseUrl>https://github.com/bsstahl/LiquidNun/blob/master/LICENSE</PackageLicenseUrl>
   </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="xunit.abstractions" Version="2.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\LiquidNun\LiquidNun.csproj" />
+  </ItemGroup>
 
 </Project>
