@@ -33,7 +33,7 @@ namespace LiquidNun.Entities
         /// <param name="messageParameters">The parameters to be applied to the messageFormat template.</param>
         public void LogCrash(string category, string title, string messageFormat, params object[] messageParameters)
         {
-            LogCrash(category, title, string.Format(System.Globalization.CultureInfo.CurrentCulture, messageFormat, messageParameters));
+            this.LogCrash(category, title, string.Format(System.Globalization.CultureInfo.CurrentCulture, messageFormat, messageParameters));
         }
 
         /// <summary>
@@ -45,7 +45,7 @@ namespace LiquidNun.Entities
         /// <param name="message">The full text of the message sent to the logging provider.</param>
         public void LogCrash(string category, string title, string message)
         {
-            Write(category, title, message, 0, EventLogEntryType.Error);
+            this.Write(category, title, message, 0, EventLogEntryType.Error);
         }
 
         /// <summary>
@@ -58,7 +58,7 @@ namespace LiquidNun.Entities
         /// <param name="messageParameters">The parameters to be applied to the messageFormat template.</param>
         public void LogError(string category, string title, string messageFormat, params object[] messageParameters)
         {
-            LogError(category, title, string.Format(System.Globalization.CultureInfo.CurrentCulture, messageFormat, messageParameters));
+            this.LogError(category, title, string.Format(System.Globalization.CultureInfo.CurrentCulture, messageFormat, messageParameters));
         }
 
         /// <summary>
@@ -70,7 +70,7 @@ namespace LiquidNun.Entities
         /// <param name="message">The full text of the message sent to the logging provider.</param>
         public void LogError(string category, string title, string message)
         {
-            Write(category, title, message, 2, EventLogEntryType.Error);
+            this.Write(category, title, message, 2, EventLogEntryType.Error);
         }
 
         /// <summary>
@@ -83,7 +83,7 @@ namespace LiquidNun.Entities
         /// <param name="messageParameters">The parameters to be applied to the messageFormat template.</param>
         public void LogInformation(string category, string title, string messageFormat, params object[] messageParameters)
         {
-            LogInformation(category, title, string.Format(System.Globalization.CultureInfo.CurrentCulture, messageFormat, messageParameters));
+            this.LogInformation(category, title, string.Format(System.Globalization.CultureInfo.CurrentCulture, messageFormat, messageParameters));
         }
 
         /// <summary>
@@ -95,7 +95,7 @@ namespace LiquidNun.Entities
         /// <param name="message">The full text of the message sent to the logging provider.</param>
         public void LogInformation(string category, string title, string message)
         {
-            Write(category, title, message, 5, EventLogEntryType.Information);
+            this.Write(category, title, message, 5, EventLogEntryType.Information);
         }
 
         /// <summary>
@@ -108,7 +108,7 @@ namespace LiquidNun.Entities
         /// <param name="messageParameters">The parameters to be applied to the messageFormat template.</param>
         public void LogWarning(string category, string title, string messageFormat, params object[] messageParameters)
         {
-            LogWarning(category, title, string.Format(System.Globalization.CultureInfo.CurrentCulture, messageFormat, messageParameters));
+            this.LogWarning(category, title, string.Format(System.Globalization.CultureInfo.CurrentCulture, messageFormat, messageParameters));
         }
 
         /// <summary>
@@ -120,7 +120,7 @@ namespace LiquidNun.Entities
         /// <param name="message">The full text of the message sent to the logging provider.</param>
         public void LogWarning(string category, string title, string message)
         {
-            Write(category, title, message, 3, EventLogEntryType.Warning);
+            this.Write(category, title, message, 3, EventLogEntryType.Warning);
         }
 
     }
