@@ -8,9 +8,6 @@ namespace LiquidNun.Directory.FileSystem.Test
 {
     public class Provider_ReadAllText_Should
     {
-        const string _textFilePath = @"TestFile.txt";
-        const string _textFileContents = "e4c5112e-3011-4b5f-b957-6294a43abf59";
-
         [Fact]
         public void ThrowFileNotFoundIfTheFileDoesNotExist()
         {
@@ -23,8 +20,8 @@ namespace LiquidNun.Directory.FileSystem.Test
         public void ReturnTheTextFromTheFile()
         {
             var target = new Provider();
-            var actual = target.ReadAllText(_textFilePath);
-            Assert.Equal(_textFileContents, actual);
+            var actual = target.ReadAllText(Constants.TextFilePath);
+            Assert.Equal(Constants.TextFileContents, actual);
         }
     }
 }
