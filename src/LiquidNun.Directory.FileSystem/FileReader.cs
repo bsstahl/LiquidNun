@@ -9,9 +9,9 @@ namespace LiquidNun.Directory.FileSystem
 
     public class FileReader : IFileReader
     {
-        System.IO.TextReader _reader;
+        readonly System.IO.TextReader _reader;
 
-        public FileReader() { }
+        // public FileReader() { }
 
         public FileReader(string filePath)
         {
