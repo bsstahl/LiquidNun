@@ -17,4 +17,15 @@
     </PackageReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\LiquidNun.Directory.FileSystem\LiquidNun.Directory.FileSystem.csproj" />
+    <ProjectReference Include="..\..\src\LiquidNun\LiquidNun.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="TestFile.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>
