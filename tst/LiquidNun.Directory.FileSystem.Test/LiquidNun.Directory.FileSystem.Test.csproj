@@ -23,6 +23,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Update="MultiLineFile.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="TestFile.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
