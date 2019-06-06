@@ -13,6 +13,7 @@ namespace LiquidNun.Logging.Stream
         public Provider(System.IO.Stream stream)
         {
             _writer = new System.IO.StreamWriter(stream);
+            _writer.AutoFlush = true;
         }
 
         /// <summary>

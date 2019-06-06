@@ -45,6 +45,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Directory", "Directory", "{
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LiquidNun.Directory.FileSystem.Test", "tst\LiquidNun.Directory.FileSystem.Test\LiquidNun.Directory.FileSystem.Test.csproj", "{10D0C686-6A9F-4E6F-984E-658327B3D813}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LiquidNun.Logging.Stream.Test", "tst\LiquidNun.Logging.Stream.Test\LiquidNun.Logging.Stream.Test.csproj", "{761409FD-6683-4F15-B6DB-E134D0A82C27}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -87,6 +89,10 @@ Global
 		{10D0C686-6A9F-4E6F-984E-658327B3D813}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{10D0C686-6A9F-4E6F-984E-658327B3D813}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{10D0C686-6A9F-4E6F-984E-658327B3D813}.Release|Any CPU.Build.0 = Release|Any CPU
+		{761409FD-6683-4F15-B6DB-E134D0A82C27}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{761409FD-6683-4F15-B6DB-E134D0A82C27}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{761409FD-6683-4F15-B6DB-E134D0A82C27}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{761409FD-6683-4F15-B6DB-E134D0A82C27}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -107,6 +113,7 @@ Global
 		{4EA5CFC7-8FFF-4C97-B3D7-B1218BA92D1D} = {5B90FF6D-DA31-4B01-935A-1BCC12132C77}
 		{CC9625B5-E030-44ED-8D05-5A6EBD7247C6} = {5B90FF6D-DA31-4B01-935A-1BCC12132C77}
 		{10D0C686-6A9F-4E6F-984E-658327B3D813} = {CC9625B5-E030-44ED-8D05-5A6EBD7247C6}
+		{761409FD-6683-4F15-B6DB-E134D0A82C27} = {14FA3B8A-ABD1-4433-9DD9-538044B4F8A7}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {149EC20A-C436-4604-B05D-8968169E83FB}

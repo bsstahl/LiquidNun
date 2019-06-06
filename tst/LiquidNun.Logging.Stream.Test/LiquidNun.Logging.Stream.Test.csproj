@@ -17,4 +17,8 @@
     </PackageReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\LiquidNun.Logging.Stream\LiquidNun.Logging.Stream.csproj" />
+  </ItemGroup>
+
 </Project>

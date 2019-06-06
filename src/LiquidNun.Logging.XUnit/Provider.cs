@@ -6,7 +6,7 @@ namespace LiquidNun.Logging.XUnit
 {
     public class Provider : LoggingProviderBase
     {
-        ITestOutputHelper _output;
+        readonly ITestOutputHelper _output;
         public Provider(ITestOutputHelper output)
         {
             _output = output;
