@@ -29,7 +29,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LiquidNun.Logging.XUnit", "
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LiquidNun.Logging.XUnit.Test", "tst\LiquidNun.Logging.XUnit.Test\LiquidNun.Logging.XUnit.Test.csproj", "{EB9D6776-B51E-4521-AC33-0A59B40F98F7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LiquidNun.Logging.Stream", "src\LiquidNun.Logging.Stream\LiquidNun.Logging.Stream.csproj", "{3CE346B1-C1E6-4BDE-B361-4303E4F731C4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LiquidNun.Logging.Stream", "src\LiquidNun.Logging.Stream\LiquidNun.Logging.Stream.csproj", "{3CE346B1-C1E6-4BDE-B361-4303E4F731C4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LiquidNun.HttpClient.Native", "src\LiquidNun.HttpClient.Native\LiquidNun.HttpClient.Native.csproj", "{ACF9D8BA-C4BD-4498-AE21-45F7F869D2A5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LiquidNun.HttpClient.Native.Test", "tst\LiquidNun.HttpClient.Native.Test\LiquidNun.HttpClient.Native.Test.csproj", "{1F779091-DD8A-425B-A571-9308DE07FBCA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -69,6 +73,14 @@ Global
 		{3CE346B1-C1E6-4BDE-B361-4303E4F731C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3CE346B1-C1E6-4BDE-B361-4303E4F731C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3CE346B1-C1E6-4BDE-B361-4303E4F731C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ACF9D8BA-C4BD-4498-AE21-45F7F869D2A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ACF9D8BA-C4BD-4498-AE21-45F7F869D2A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ACF9D8BA-C4BD-4498-AE21-45F7F869D2A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ACF9D8BA-C4BD-4498-AE21-45F7F869D2A5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1F779091-DD8A-425B-A571-9308DE07FBCA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F779091-DD8A-425B-A571-9308DE07FBCA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F779091-DD8A-425B-A571-9308DE07FBCA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F779091-DD8A-425B-A571-9308DE07FBCA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -82,6 +94,8 @@ Global
 		{FE66ED16-B273-44E4-BBD1-BF0661C04AAC} = {A09ED186-E52D-43DD-B6C0-62BD3870B9D3}
 		{EB9D6776-B51E-4521-AC33-0A59B40F98F7} = {5B90FF6D-DA31-4B01-935A-1BCC12132C77}
 		{3CE346B1-C1E6-4BDE-B361-4303E4F731C4} = {A09ED186-E52D-43DD-B6C0-62BD3870B9D3}
+		{ACF9D8BA-C4BD-4498-AE21-45F7F869D2A5} = {A09ED186-E52D-43DD-B6C0-62BD3870B9D3}
+		{1F779091-DD8A-425B-A571-9308DE07FBCA} = {5B90FF6D-DA31-4B01-935A-1BCC12132C77}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {149EC20A-C436-4604-B05D-8968169E83FB}
