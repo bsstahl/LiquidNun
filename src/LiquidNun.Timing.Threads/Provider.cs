@@ -40,17 +40,12 @@ namespace LiquidNun.Timing.Threads
 
             long startingTicks = DateTime.Now.Ticks;
             long delayTicks = length.Ticks;
-            long whenToStopInTicks = startingTicks + delayTicks - slackTicks;
+            long whenToStopInTicks = startingTicks + delayTicks - slackTicks + 1;
 
             do
             {
-                //if ((whenToStopInTicks - DateTime.Now.Ticks) > slackTicks)
-                //{
-                //    delayTicks = whenToStopInTicks - DateTime.Now.Ticks - slackTicks;
-                //    var t = System.Threading.Tasks.Task.Delay(length);
-                //    t.Wait();
-                //}
-            } while (DateTime.Now.Ticks < whenToStopInTicks);
+                System.Threading.Thread.Sleep(1);
+            } while (DateTime.Now.Ticks <= whenToStopInTicks);
         }
     }
 }
