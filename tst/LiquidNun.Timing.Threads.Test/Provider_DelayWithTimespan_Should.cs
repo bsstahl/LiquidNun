@@ -6,7 +6,7 @@ using Xunit;
 
 namespace LiquidNun.Timing.Threads.Test
 {
-    public class Provider_Delay_Should
+    public class Provider_DelayWithTimespan_Should
     {
         [Fact]
         public void AlwaysDelayAtLeastAsLongAsTheSpecifiedValue()
@@ -69,7 +69,7 @@ namespace LiquidNun.Timing.Threads.Test
         }
 
         [Fact]
-        public void NeverDelayLongerThanTheToleranceIfADelayTimespanIsSpecified()
+        public void NeverDelayLongerThanTheTolerance()
         {
             // This is only a sanity-test.  I don't need to check
             // that Microsoft's Delay API works properly, I just need
@@ -86,22 +86,20 @@ namespace LiquidNun.Timing.Threads.Test
             var delayInMs = maxDelayValue.GetRandom(minDelayValue);
             var maxDelayRange = delayInMs * (tolerance + 1.0);
             var delayTimespan = TimeSpan.FromMilliseconds(delayInMs);
+            var delayTicks = delayTimespan.Ticks;
+            var delayToleranceTicks = Convert.ToInt64(Convert.ToDouble(delayTicks) * tolerance);
 
-            var results = new List<long>();
-
+            var results = new List<bool>();
+            Int64 currentTicks = 0;
             for (int i = 0; i < executionCount; i++)
             {
-                var timer = new System.Diagnostics.Stopwatch();
-                timer.Start();
+                var endTicks = DateTime.Now.Ticks + delayTicks;
                 target.Delay(delayTimespan);
-                timer.Stop();
-                results.Add(timer.ElapsedMilliseconds);
+                currentTicks = DateTime.Now.Ticks;
+                results.Add((endTicks + delayToleranceTicks) >= currentTicks);
             }
 
-            Console.WriteLine($"Specified: {delayTimespan.Milliseconds}  Max Allowed: {maxDelayRange}  Max Actual: {results.Max(m => m)}");
-
-            var actual = results.OrderByDescending(m => m);
-            Assert.DoesNotContain(actual, m => m > maxDelayRange);
+            Assert.DoesNotContain(results, m => !m);
         }
     }
 }

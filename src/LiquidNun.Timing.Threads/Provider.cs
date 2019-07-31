@@ -18,7 +18,7 @@ namespace LiquidNun.Timing.Threads
         /// <param name="until">The time, with timezone information, at which the method should return.</param>
         public void Delay(DateTimeOffset until)
         {
-            throw new NotImplementedException();
+            this.Delay(until.Ticks);
         }
 
         /// <summary>
@@ -27,7 +27,7 @@ namespace LiquidNun.Timing.Threads
         /// <param name="untilUtc">The UTC time at which the method should return.</param>
         public void Delay(DateTime untilUtc)
         {
-            throw new NotImplementedException();
+            this.Delay(untilUtc.Ticks);
         }
 
         /// <summary>
@@ -36,16 +36,22 @@ namespace LiquidNun.Timing.Threads
         /// <param name="length">The length of time after which the method should return.</param>
         public void Delay(TimeSpan length)
         {
-            const int slackTicks = 0;
-
             long startingTicks = DateTime.Now.Ticks;
             long delayTicks = length.Ticks;
-            long whenToStopInTicks = startingTicks + delayTicks - slackTicks + 1;
+            long whenToStopInTicks = startingTicks + delayTicks;
+            this.Delay(whenToStopInTicks);
+        }
 
+        /// <summary>
+        /// Delays until the date/time specified in ticks.
+        /// </summary>
+        /// <param name="until">The time in ticks at which the method should return.</param>
+        public void Delay(Int64 until)
+        {
             do
             {
                 System.Threading.Thread.Sleep(1);
-            } while (DateTime.Now.Ticks <= whenToStopInTicks);
+            } while (DateTime.Now.Ticks < until);
         }
     }
 }
