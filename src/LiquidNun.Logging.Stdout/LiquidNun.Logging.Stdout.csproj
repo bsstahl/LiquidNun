@@ -10,7 +10,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\LiquidNun\LiquidNun.csproj" />
+    <PackageReference Include="LiquidNun" Version="0.8.0" />
   </ItemGroup>
 
 </Project>

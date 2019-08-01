@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
@@ -12,14 +12,14 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\LiquidNun\LiquidNun.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
     <None Include="..\..\LICENSE">
       <Pack>True</Pack>
       <PackagePath></PackagePath>
     </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="LiquidNun" Version="0.7.0" />
   </ItemGroup>
 
 </Project>
