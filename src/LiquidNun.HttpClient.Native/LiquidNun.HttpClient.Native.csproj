@@ -1,10 +1,10 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Version>0.8.0</Version>
+    <Version>0.9.0</Version>
     <Copyright>Copyright &amp;copy; 2019 by Barry S. Stahl</Copyright>
     <Company>LiquidNun</Company>
     <Product>LiquidNun.HttpClient.Native</Product>
@@ -12,7 +12,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="LiquidNun" Version="0.8.0" />
+    <PackageReference Include="LiquidNun" Version="0.9.0" />
   </ItemGroup>
 
   <ItemGroup>

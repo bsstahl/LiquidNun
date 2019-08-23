@@ -7,5 +7,6 @@ namespace LiquidNun.Interfaces
     public interface IHttpClient
     {
         string GetString(string url);
+        string PostString(string url, string message);
     }
 }
