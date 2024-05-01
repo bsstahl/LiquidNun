@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.28822.285
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34511.84
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{920FB55F-377A-4DD8-A77E-83621889B16F}"
 	ProjectSection(SolutionItems) = preProject
@@ -54,6 +54,10 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "HttpClient", "HttpClient", "{9871A6C9-1769-4792-90CC-0671AE040884}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "HttpClient", "HttpClient", "{5E0F4AF8-7598-4D37-9FDC-0C6E0528293C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Email", "Email", "{2B85D4E1-13CE-4C2E-A9D6-6D0B06E75677}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LiquidNun.EmailClient.HtmlWithBasicAuth", "src\LiquidNun.EmailClient.HtmlWithBasicAuth\LiquidNun.EmailClient.HtmlWithBasicAuth.csproj", "{4F0CFA5E-BDC4-476E-9FAF-FDDF06A5D9F8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -109,6 +113,10 @@ Global
 		{761409FD-6683-4F15-B6DB-E134D0A82C27}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{761409FD-6683-4F15-B6DB-E134D0A82C27}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{761409FD-6683-4F15-B6DB-E134D0A82C27}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F0CFA5E-BDC4-476E-9FAF-FDDF06A5D9F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F0CFA5E-BDC4-476E-9FAF-FDDF06A5D9F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F0CFA5E-BDC4-476E-9FAF-FDDF06A5D9F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F0CFA5E-BDC4-476E-9FAF-FDDF06A5D9F8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -134,6 +142,8 @@ Global
 		{CC9625B5-E030-44ED-8D05-5A6EBD7247C6} = {5B90FF6D-DA31-4B01-935A-1BCC12132C77}
 		{9871A6C9-1769-4792-90CC-0671AE040884} = {5B90FF6D-DA31-4B01-935A-1BCC12132C77}
 		{5E0F4AF8-7598-4D37-9FDC-0C6E0528293C} = {A09ED186-E52D-43DD-B6C0-62BD3870B9D3}
+		{2B85D4E1-13CE-4C2E-A9D6-6D0B06E75677} = {A09ED186-E52D-43DD-B6C0-62BD3870B9D3}
+		{4F0CFA5E-BDC4-476E-9FAF-FDDF06A5D9F8} = {2B85D4E1-13CE-4C2E-A9D6-6D0B06E75677}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {149EC20A-C436-4604-B05D-8968169E83FB}

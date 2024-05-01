@@ -2,12 +2,13 @@
 
 	<PropertyGroup>
 		<TargetFramework>netstandard2.0</TargetFramework>
+		<LangVersion>latest</LangVersion>
 		<PackageLicenseFile>LICENSE</PackageLicenseFile>
 		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-		<Version>0.9.1</Version>
+		<Version>0.10.0</Version>
 		<Copyright>Copyright &amp;copy; 2019 by Barry S. Stahl</Copyright>
 		<Company>LiquidNun</Company>
-		<Product>LiquidNun.HttpClient.Native</Product>
+		<Product>LiquidNun.EmailClient.HtmlWithBasicAuth</Product>
 		<Authors>Barry S. Stahl</Authors>
 	</PropertyGroup>
 
@@ -20,6 +21,7 @@
 
 	<ItemGroup>
 		<PackageReference Include="LiquidNun" Version="0.10.0" />
+		<PackageReference Include="MailKit" Version="4.5.0" />
 	</ItemGroup>
 
 </Project>
