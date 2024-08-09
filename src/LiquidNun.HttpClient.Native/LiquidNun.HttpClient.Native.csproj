@@ -4,7 +4,7 @@
 		<TargetFramework>netstandard2.0</TargetFramework>
 		<PackageLicenseFile>LICENSE</PackageLicenseFile>
 		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-		<Version>0.9.1</Version>
+		<Version>0.10.1</Version>
 		<Copyright>Copyright &amp;copy; 2019 by Barry S. Stahl</Copyright>
 		<Company>LiquidNun</Company>
 		<Product>LiquidNun.HttpClient.Native</Product>
@@ -19,7 +19,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<PackageReference Include="LiquidNun" Version="0.10.0" />
+	  <PackageReference Include="LiquidNun" Version="0.10.1" />
 	</ItemGroup>
 
 </Project>
