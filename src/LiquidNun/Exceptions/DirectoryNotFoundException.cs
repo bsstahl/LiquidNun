@@ -20,7 +20,10 @@ namespace LiquidNun.Exceptions
         /// <summary>
         /// The default constructor of the exception
         /// </summary>
-        public DirectoryNotFoundException() : base() { }
+        protected DirectoryNotFoundException() : base() 
+        { 
+            this.PathName = string.Empty;
+        }
 
         /// <summary>
         /// The primary (preferred) constructor of the exception
@@ -37,7 +40,11 @@ namespace LiquidNun.Exceptions
         /// </summary>
         /// <param name="message">The description of the error</param>
         /// <param name="innerException">The error that caused this error</param>
-        public DirectoryNotFoundException(string message, Exception innerException) : base(message, innerException) { }
+        protected DirectoryNotFoundException(string message, Exception innerException) 
+            : base(message, innerException)
+        {
+            this.PathName = string.Empty;
+        }
 
     }
 

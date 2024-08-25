@@ -1,13 +1,23 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.Text;
 
-namespace LiquidNun.Interfaces
+namespace LiquidNun.Interfaces;
+
+public interface IHttpClient
 {
-    public interface IHttpClient
-    {
-        string GetString(string url);
-        string PostString(string url, string message);
-        string PostString(string url, string message, string? bearerToken);
-    }
+    string GetString(string requestAddress);
+
+    string PostString(string requestAddress, string message);
+    
+    string PostString(string requestAddress, string message, string? bearerToken);
+    string PostString(string requestAddress, string message, Encoding encoding);
+
+    string PostString(string requestAddress, string message, Encoding encoding, string? bearerToken);
+    string PostString(string requestAddress, string message, string contentType, string? bearerToken);
+
+    string PostJsonString(string requestAddress, string message);
+    string PostJsonString(string requestAddress, string message, string? bearerToken);
+    string PostJsonString(string requestAddress, string message, Encoding encoding);
+
+    string PostString(string requestAddress, string message, Encoding encoding, string contentType, string? bearerToken);
+
 }

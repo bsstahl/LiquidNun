@@ -2,9 +2,12 @@
 
 	<PropertyGroup>
 		<TargetFramework>netstandard2.0</TargetFramework>
+		<LangVersion>latest</LangVersion>
+		<Nullable>enable</Nullable>
+		<AnalysisLevel>latest-all</AnalysisLevel>
 		<PackageLicenseFile>LICENSE</PackageLicenseFile>
 		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-		<Version>0.10.1</Version>
+		<Version>0.10.2</Version>
 		<Copyright>Copyright &amp;copy; 2019 by Barry S. Stahl</Copyright>
 		<Company>LiquidNun</Company>
 		<Product>LiquidNun.HttpClient.Native</Product>
@@ -19,7 +22,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <PackageReference Include="LiquidNun" Version="0.10.1" />
+	  <PackageReference Include="LiquidNun" Version="0.10.2" />
 	</ItemGroup>
 
 </Project>

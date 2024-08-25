@@ -20,13 +20,16 @@ namespace LiquidNun.Exceptions
         /// <summary>
         /// The default constructor of the exception
         /// </summary>
-        public FileNotFoundException() : base() { }
+        protected FileNotFoundException() 
+            : base() 
+        {
+            this.FilePath = string.Empty;
+        }
 
         /// <summary>
         /// The primary (preferred) constructor of the exception
         /// </summary>
         /// <param name="filePath">The path that was specified for the directory</param>
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Globalization", "CA1305:SpecifyIFormatProvider", MessageId = "System.String.Format(System.String,System.Object[])")]
         public FileNotFoundException(string filePath)
             : base($"File '{filePath}', not found.")
         {
@@ -38,7 +41,11 @@ namespace LiquidNun.Exceptions
         /// </summary>
         /// <param name="message">The description of the error</param>
         /// <param name="innerException">The error that caused this error</param>
-        public FileNotFoundException(string message, Exception innerException) : base(message, innerException) { }
+        protected FileNotFoundException(string message, Exception innerException) 
+            : base(message, innerException)
+        {
+            this.FilePath = string.Empty;
+        }
 
     }
 }
