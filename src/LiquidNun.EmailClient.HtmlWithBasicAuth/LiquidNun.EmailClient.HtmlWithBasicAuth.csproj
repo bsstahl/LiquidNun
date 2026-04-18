@@ -21,7 +21,7 @@
 
 	<ItemGroup>
 		<PackageReference Include="LiquidNun" Version="0.10.0" />
-		<PackageReference Include="MailKit" Version="4.5.0" />
+		<PackageReference Include="MailKit" Version="4.16.0" />
 	</ItemGroup>
 
 </Project>
