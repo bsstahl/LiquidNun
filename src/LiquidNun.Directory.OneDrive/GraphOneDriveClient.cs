@@ -18,7 +18,7 @@ namespace LiquidNun.Directory.OneDrive
     internal sealed class GraphOneDriveClient : IOneDriveClient
     {
         private readonly GraphServiceClient _graphClient;
-        private volatile string? _driveId;
+        private string? _driveId;
 
         /// <summary>
         /// Creates a client that lazily resolves the signed-in user's OneDrive on
