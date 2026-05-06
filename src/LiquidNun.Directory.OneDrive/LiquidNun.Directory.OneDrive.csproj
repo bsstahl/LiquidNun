@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <Nullable>enable</Nullable>
+    <AnalysisLevel>latest-all</AnalysisLevel>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Version>0.10.2</Version>
+    <Copyright>Copyright &amp;copy; 2019 by Barry S. Stahl</Copyright>
+    <Company>LiquidNun</Company>
+    <Product>LiquidNun.Directory.OneDrive</Product>
+    <Authors>Barry S. Stahl</Authors>
+    <Description>A OneDrive implementation of the LiquidNun IDirectoryService abstraction, using the Microsoft Graph API with Azure.Identity for authentication.</Description>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\..\LICENSE">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="LiquidNun" Version="0.10.2" />
+    <PackageReference Include="Azure.Identity" Version="1.12.0" />
+    <PackageReference Include="Microsoft.Graph" Version="5.56.0" />
+  </ItemGroup>
+
+</Project>
