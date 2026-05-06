@@ -61,6 +61,17 @@ namespace LiquidNun.Directory.OneDrive
     /// e.g. <c>/Documents/Reports/Q1.xlsx</c>.  An empty string, <c>"/"</c>, or
     /// <c>"\"</c> all refer to the drive root.
     /// </para>
+    /// <para>
+    /// <b>Threading note</b><br/>
+    /// The methods on <see cref="IDirectoryService"/> are synchronous.  Internally
+    /// this provider bridges the async Microsoft Graph SDK calls using
+    /// <c>GetAwaiter().GetResult()</c>.  When the calling code already runs inside a
+    /// synchronization context that serialises work to a single thread (e.g. an older
+    /// ASP.NET pipeline or a WPF/WinForms dispatcher) this bridging can deadlock.
+    /// In those environments, call this provider from a thread-pool thread
+    /// (e.g. <c>Task.Run(() => provider.GetFiles(path)).GetAwaiter().GetResult()</c>),
+    /// or consider adding an async version of the interface in a future release.
+    /// </para>
     /// </remarks>
     public class Provider : IDirectoryService
     {

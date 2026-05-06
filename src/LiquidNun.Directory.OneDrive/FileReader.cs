@@ -30,6 +30,15 @@ namespace LiquidNun.Directory.OneDrive
         /// Reads the next line of text from the file and returns it, or
         /// <see langword="null"/> if the end of the stream has been reached.
         /// </summary>
+        /// <remarks>
+        /// Although <see cref="IFileReader.ReadLine"/> is typed as returning
+        /// <see cref="string"/> (non-nullable), <see cref="System.IO.StreamReader.ReadLine"/>
+        /// legitimately returns <see langword="null"/> at end-of-file.  The null-forgiving
+        /// operator (<c>!</c>) is used here to satisfy the compiler's nullable analysis;
+        /// at runtime, <see langword="null"/> is still propagated to callers that check for
+        /// it (consistent with the rest of the LiquidNun <see cref="IFileReader"/>
+        /// implementations).
+        /// </remarks>
         public string ReadLine() => _reader.ReadLine()!;
 
         /// <summary>

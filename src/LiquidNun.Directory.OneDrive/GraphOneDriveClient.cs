@@ -137,9 +137,16 @@ namespace LiquidNun.Directory.OneDrive
 
         private static DriveItemInfo MapItem(DriveItem item, string requestedPath)
         {
-            string name = item.Name ?? System.IO.Path.GetFileName(requestedPath.TrimEnd('/')) ?? string.Empty;
+            string name = item.Name ?? ExtractItemName(requestedPath);
             return new DriveItemInfo(name, requestedPath, item.File is not null, item.Folder is not null);
         }
+
+        /// <summary>
+        /// Derives a display name from the tail segment of a path when the drive item's
+        /// <c>Name</c> field is absent (e.g., when mapping the drive root itself).
+        /// </summary>
+        private static string ExtractItemName(string path)
+            => System.IO.Path.GetFileName(path.TrimEnd('/').TrimEnd('\\')) ?? string.Empty;
 
         private static string CombinePaths(string parent, string child)
         {
